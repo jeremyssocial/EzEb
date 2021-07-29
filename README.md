@@ -1,6 +1,10 @@
 # EzEb
 EbSynth is hard to use... Lot's of turning videos into image sequences, resizing style images to fit the original frames, renaming the style images to be named like the original frame and lot's more. I didn't want to do that every single time so I just automated it. Kind of. And it's still a work in progress. But it does what it's supposed to do. Make using EbSynth easier... That's why it's called EzEb. 
 
+# Before you first run
+- run the requirements.bat file to install the required python libraries for this project
+- run the clearDir.py file to get all the folders empty and ready for you to use
+
 # So how can you use this?
 Well, it's actually not that hard. Here is a step by step guide:
 
