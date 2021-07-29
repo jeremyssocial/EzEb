@@ -1,0 +1,2 @@
+# EzEb
+EbSynth is hard to use... Lot's of turning videos into image sequences, resizing style images to fit the original frames, renaming the style images to be named like the original frame and lot's more. I didn't want to do that every single time so I just automated it. Kind of. And it's still a work in progress. But it does what it's supposed to do. Make using EbSynth easier... That's why it's called EzEb. 
