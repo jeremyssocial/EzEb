@@ -37,3 +37,7 @@ for f in files:
 files = glob.glob('./styleCorrect/*')
 for f in files:
         os.remove(f)
+
+files = glob.glob('./result/*')
+for f in files:
+        os.remove(f)
