@@ -2,10 +2,12 @@
 EbSynth is hard to use... Lots of turning videos into image sequences, resizing style images to fit the original frames, renaming the style images to be named like the original frames, and lot's more. I didn't want to do that every single time, so I just automated it. Kind of. And it's still a work in progress. But it does what it's supposed to do. Make using EbSynth easier... That's why it's called EzEb. 
 
 # So what does EzEb do?
-EzEb is an automated way of making EbSynth easier to use. It turns videos into image sequences, resizes your style images to fit the original frames, and renames the style images to the name of the original frame, but it's still a work in progress and I'm planning on adding more features.
+EzEb is an automated way of making EbSynth easier to use. It turns videos into image sequences, resizes your style images to fit the original frames, and renames the style images to the name of the original frame. And now it also takes your frames from the result folder and turns them into a video!
+But EzEb still a work in progress and I'm planning on adding more features.
 
 # Before you first run
 - run the requirements.bat file to install the required python libraries for this project
+- make sure you have ffmpeg installed
 - run the clearDir.py file to get all the folders empty and ready for you to use
 
 # So how can you use this?
@@ -25,5 +27,5 @@ Well, it's actually not that hard. Here is a step by step guide:
 12. Drag and drop the styleCorrect folder into EbSynth where it says "Keyframes:"
 13. Drag and drop the render folder into EbSynth where it says "Output:"
 14. Click the "Run All" button.
-15. Take the frames from the render folder and turn them into a video with your preferred method. (I'm planning on automating that part aswell in the future.)
+15. Once it's finished switch back to EzEb and hit enter to have the frames in the "render" folder turned into a video, which will be saved in the "result" folder.
 16. Repeat if you want to make another stylized video.
