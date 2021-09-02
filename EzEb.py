@@ -66,4 +66,4 @@ width = vidcap.get(cv2.CAP_PROP_FRAME_WIDTH)
 height = vidcap.get(cv2.CAP_PROP_FRAME_HEIGHT)
 
 #turn all the frames saved in the folder "./render" into a video called "result.mp4" in the directory "./result". The fps of the video should be the variable "fps" and the width and height should be the variables "width" and "height".
-os.system("ffmpeg -r "+str(fps)+" -i ./frames/%04d.jpg -i ./video/vid.mp4 -c:v libx264 -pix_fmt yuv420p -r "+str(fps)+" ./result/result.mp4")
+os.system("ffmpeg -r "+str(fps)+" -i ./render/%04d.jpg -i ./video/vid.mp4 -c:v libx264 -pix_fmt yuv420p -r "+str(fps)+" ./result/result.mp4")
