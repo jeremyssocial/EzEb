@@ -57,6 +57,8 @@ while(more):
         else:
             print("either y or n")
 
+input("Do what you have to do in EbSynth, then return here and press enter")
+
 #see how many fps the video called "vid.mp4" in the folder "./video" has and save it to a variable called "fps"
 vidcap = cv2.VideoCapture("./video/vid.mp4")
 fps = vidcap.get(cv2.CAP_PROP_FPS)
