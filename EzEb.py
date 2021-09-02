@@ -57,15 +57,19 @@ while(more):
         else:
             print("either y or n")
 
-input("Do what you have to do in EbSynth, then return here and press enter")
 
+            
+#BROKEN FEATURE AHEAD:
+#            
+#input("Do what you have to do in EbSynth, then return here and press enter")
+#
 #see how many fps the video called "vid.mp4" in the folder "./video" has and save it to a variable called "fps"
-vidcap = cv2.VideoCapture("./video/vid.mp4")
-fps = vidcap.get(cv2.CAP_PROP_FPS)
-
+#vidcap = cv2.VideoCapture("./video/vid.mp4")
+#fps = vidcap.get(cv2.CAP_PROP_FPS)
+#
 #see the height and width of the video called "vid.mp4" in the folder "./video" and save them to the variables "width" and "height"
-width = vidcap.get(cv2.CAP_PROP_FRAME_WIDTH)
-height = vidcap.get(cv2.CAP_PROP_FRAME_HEIGHT)
-
+#width = vidcap.get(cv2.CAP_PROP_FRAME_WIDTH)
+#height = vidcap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+#
 #turn all the frames saved in the folder "./render" into a video called "result.mp4" in the directory "./result". The fps of the video should be the variable "fps" and the width and height should be the variables "width" and "height".
-os.system("ffmpeg -r "+str(fps)+" -i ./render/%04d.jpg -i ./video/vid.mp4 -c:v libx264 -pix_fmt yuv420p -r "+str(fps)+" ./result/result.mp4")
+#os.system("ffmpeg -r "+str(fps)+" -i ./render/%04d.jpg -i ./video/vid.mp4 -c:v libx264 -pix_fmt yuv420p -r "+str(fps)+" ./result/result.mp4")
