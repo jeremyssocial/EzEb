@@ -67,5 +67,12 @@ fps = vidcap.get(cv2.CAP_PROP_FPS)
 width = vidcap.get(cv2.CAP_PROP_FRAME_WIDTH)
 height = vidcap.get(cv2.CAP_PROP_FRAME_HEIGHT)
 
-#turn all the images in the folder "./render" into a video called "result.mp4" in the directory "./result". The fps of the video should be the variable "fps" and the width and height should be the variables "width" and "height".
-os.system("ffmpeg -r "+str(fps)+" -i ./render/%04d.jpg -vcodec mpeg4 -y ./result/result.mp4")
+#turn all the frames saved in the folder "./render" into a video called "result.mp4" in the directory "./result". The fps of the video should be the variable "fps" and the width and height should be the variables "width" and "height".
+#check if the images in the folder "./render" are png or jpg
+#if the images are png use os.system("ffmpeg -r "+str(fps)+" -i ./render/%04d.png -vcodec mpeg4 -y ./result/result.mp4")
+#if the images are jpg use os.system("ffmpeg -r "+str(fps)+" -i ./render/%04d.jpg -vcodec mpeg4 -y ./result/result.mp4")
+
+if os.path.exists("./render/0001.png"):
+    os.system("ffmpeg -r "+str(fps)+" -i ./render/%04d.png -vcodec mpeg4 -y ./result/result.mp4")
+elif os.path.exists("./render/0001.jpg"):
+    os.system("ffmpeg -r "+str(fps)+" -i ./render/%04d.jpg -vcodec mpeg4 -y ./result/result.mp4")
