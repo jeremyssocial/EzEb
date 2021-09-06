@@ -5,7 +5,7 @@ os.chdir(sys.path[0])
 
 keepasking = True
 while(keepasking):
-    yesORno = str(input("Should I also delete the video? (y / n)"))
+    yesORno = str(input("Should I also delete the input video? (y / n)"))
     if yesORno == "y":
         delVid = True
         keepasking = False
