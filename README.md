@@ -1,31 +1,39 @@
 # EzEb
-EbSynth is hard to use... Lots of turning videos into image sequences, resizing style images to fit the original frames, renaming the style images to be named like the original frames, and lot's more. I didn't want to do that every single time, so I just automated it. Kind of. And it's still a work in progress. But it does what it's supposed to do. Make using EbSynth easier... That's why it's called EzEb. 
 
-# So what does EzEb do?
-EzEb is an automated way of making EbSynth easier to use. It turns videos into image sequences, resizes your style images to fit the original frames, and renames the style images to the name of the original frame. And now it also takes your frames from the render folder and turns them into a video!
-But EzEb still a work in progress and I'm planning on adding more features.
+EzEb simplifies the process of using EbSynth, a tool that can be complex due to its requirements of converting videos to image sequences, resizing style images, renaming style images to match frame names, and more. This automation, albeit a work in progress, effectively eases the use of EbSynth - hence the name EzEb.
 
-# Before you first run
-- run the requirements.bat file to install the required python libraries for this project
-- make sure you have ffmpeg installed
-- run the clearDir.py file to get all the folders empty and ready for you to use
+## What Does EzEb Do?
 
-# So how can you use this?
-Well, it's actually not that hard. Here is a step by step guide:
+EzEb automates several processes to make EbSynth more user-friendly:
+- Converts videos into image sequences
+- Resizes style images to match original frames
+- Renames style images to correspond with frame names
+- Converts frames from the 'render' folder back into a video
 
-1. use the clearDir.py file to make sure the folders are empty.
-2. put your video into the video folder
-3. start EzEb.py
-4. use your explorer to go into the frames folder and pick a frame you want to stylize and use as your style image. (Remember the filename. It will tell you what frame number the image is.
-5. restyle your image however you want and put the finished thing into the styleOriginal folder.
-6. Go back to your Python runtime where you opened EzEb. Make sure you only have one image in the styleOriginal folder and hit enter.
-7. Enter the filename I told you to remember. (The frame number that likely has some zeros before it.) and hit Enter again.
-8. Do you want to do another one? Delete your style image from the styleOriginal folder (it's already copied into styleCorrect anyway), enter "y", put a new style image in styleOriginal and repeat steps 4. 5. 6. and 7. Maybe also repeat step 8 if you have another style image.
-9. Open EbSynth.
-10. In your file explorer, go into the main EzEb directory.
-11. Drag and drop the frames folder into EbSynth where it says "Video:"
-12. Drag and drop the styleCorrect folder into EbSynth where it says "Keyframes:"
-13. Drag and drop the render folder into EbSynth where it says "Output:"
-14. Click the "Run All" button.
-15. Once it's finished switch back to EzEb and hit enter to have the frames in the "render" folder turned into a video, which will be saved in the "result" folder.
-16. Repeat if you want to make another stylized video.
+Please note that EzEb is still evolving, with more features planned for future releases.
+
+## Before Your First Run
+
+Ensure the following preparations are made:
+- Run `requirements.bat` to install necessary Python libraries.
+- Ensure ffmpeg is installed on your system.
+- Use `clearDir.py` to prepare the directories for use.
+
+## Using EzEb: A Step-by-Step Guide
+
+1. Run `clearDir.py` to clear the directories.
+2. Place your video in the 'video' folder.
+3. Launch `EzEb.py`.
+4. In the 'frames' folder, select a frame to style. Remember its file name as it indicates the frame number.
+5. Style this frame as desired and place the result in the 'styleOriginal' folder.
+6. Return to `EzEb.py`, ensure only one image is in 'styleOriginal', and press Enter.
+7. Input the remembered frame number and press Enter.
+8. If styling another frame, remove the current style image from 'styleOriginal', input 'y', add a new style image, and repeat steps 4-7.
+9. Launch EbSynth.
+10. In EzEb's main directory, use the file explorer to:
+    - Drag and drop the 'frames' folder into EbSynth at "Video:"
+    - Drag and drop 'styleCorrect' into EbSynth at "Keyframes:"
+    - Drag and drop the 'render' folder into EbSynth at "Output:"
+11. Click "Run All" in EbSynth.
+12. Once processing is complete, return to EzEb and press Enter to convert frames in 'render' into a video in the 'result' folder.
+13. Repeat these steps for additional stylized videos.
